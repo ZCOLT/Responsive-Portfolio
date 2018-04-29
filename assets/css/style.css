@@ -1,64 +1,104 @@
 body {
+    margin: 0;
     background-image: url("../images/concrete-texture.png");
 }
 
-nav {
+header {
     height: 84px;
+    margin: 0;
     border: solid #cccccc;
     background-color: #ffffff;
-    line-height: 58px;
 }
 
 h1 {
+    position: relative;
+    top: 0px;
+    left: 431px;
+    margin: 0;
     background-color: #4aaaa5;
     color: #ffffff;
-    height: 78px;
+    height: 84px;
     width: 236px;
     text-align: center;
     line-height: 86px;
+    float: left;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .about, .portfolio, .contact {
+    float: right;
+    position: relative;
+    top: 30px;
+    width: 5%;
+    height: 18px;
+    line-height: 18px;
+    text-align: center; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-link, .portfolio-link, .contact-link {
+.contact, .portfolio {
+    border-left: solid 2px;
+    border-left-style: inset;
+}
+
+.contact {
+    margin-right: 410px;
+}
+
+#about-link, #portfolio-link, #contact-link {
     text-decoration: none;
     color: #777777;
 }
-.about-link:hover, .portfolio-link:hover, .contact-link:hover {
+#about-link:hover, #portfolio-link:hover, #contact-link:hover {
     color: #4AA7C1;
     text-decoration: underline;
 }
 
 
 .about0 {
-    color: #4aaaa5 !important;
+    color: #4aaaa5;
 }
 
 .portfolio0 {
-    color: #4aaaa5 !important;
+    color: #4aaaa5;
 }
 
 .contact0 {
-    color: #4aaaa5 !important;
+    color: #4aaaa5;
+}
+
+.content {
+    height: 960px;
+    margin: 0;
 }
 
 .content-box {
+    height: 598px;
+    width: 809px;
     background-color: #ffffff;
+    margin: auto;
+    top: 35px;
+    position: relative;
     border: solid #dddddd;
 }
 
 h2 {
+    position: relative;
+    margin: 0;
     line-height: 70px;
     color: #4aaaa5;
+    margin-left: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif
    }
 
 #hr1 {
+    width: 93%;
     background-color: #777777;
 }   
+
+.image-details {
+    position: absolute;
+}
 
 img {
     float: left;
@@ -66,6 +106,7 @@ img {
 }
 
 .p {
+    margin: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     font-size: 16px;
@@ -91,6 +132,7 @@ footer {
     color: white;
     text-align: center;
     font-size: smaller;
+    /* flex-shrink: 0; */
 }
 
 #pfooter {
@@ -98,9 +140,20 @@ footer {
     line-height: 100px;
 }
 
+
+/* Portfolio Page Speciic */
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    margin: 30px;
+    font-size: 16px;
+}
+
 .box-1, .box-2, .box-3, .box-4, .box-5 {
     height: 150px;
     width: 200px;
+    margin-left: 30px
 }
 
 .box-text {
@@ -126,28 +179,33 @@ footer {
 
 .box-2 {
     background-image: url("../images/technics-q-c-200-200-2.jpg");
+    position: relative;
+    top: -150px;
+    left: 237px;
 }
 
 .box-3 {
     background-image: url("../images/technics-q-c-200-200-5.jpg");
+    position: relative;
+    top: -130px;
 }
 
 .box-4 {
     background-image: url("../images/technics-q-c-200-200-10.jpg");
+    position: relative;
+    top: -280px;
+    left: 237px;       
 }
 
 .box-5 {
     background-image: url("../images/technics-q-c-200-200-9.jpg");
+    position: relative;
+    top: -260px;
 }
 
 
+/* Contact Page Specific */
 
-form {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    margin: 30px;
-    font-size: 16px;
-}
 .submit-button {
     background-color: #4aaaa5;
     border: none;
@@ -156,5 +214,6 @@ form {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
     font-size: 16px;
 }
