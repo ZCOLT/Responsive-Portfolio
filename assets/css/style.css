@@ -98,29 +98,18 @@ footer {
     line-height: 100px;
 }
 
-
-/* Portfolio Page Speciic */
-
-form {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    margin: 30px;
-    font-size: 16px;
-}
-
 .box-1, .box-2, .box-3, .box-4, .box-5 {
     height: 150px;
     width: 200px;
-    /* margin-left: 30px */
 }
 
 .box-text {
     background-color: #4aaaa5;
     color: white;
-    /* position: relative; */
+    position: relative;
     width: 200px;
     height: 41px;
-    /* top: 100px; */
+    top: 100px;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
@@ -137,33 +126,28 @@ form {
 
 .box-2 {
     background-image: url("../images/technics-q-c-200-200-2.jpg");
-    /* position: relative; */
-    /* top: -150px; */
-    /* left: 237px; */
 }
 
 .box-3 {
     background-image: url("../images/technics-q-c-200-200-5.jpg");
-    position: relative;
-    top: -130px;
 }
 
 .box-4 {
     background-image: url("../images/technics-q-c-200-200-10.jpg");
-    position: relative;
-    top: -280px;
-    left: 237px;       
 }
 
 .box-5 {
     background-image: url("../images/technics-q-c-200-200-9.jpg");
-    position: relative;
-    top: -260px;
 }
 
 
-/* Contact Page Specific */
 
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    margin: 30px;
+    font-size: 16px;
+}
 .submit-button {
     background-color: #4aaaa5;
     border: none;
@@ -172,6 +156,5 @@ form {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
